@@ -22,8 +22,10 @@ The board uses MX‑style switches, SK6812‑MINI addressable RGB LEDs, and a 3D
 - 4 × MX‑style mechanical switches  
 - 4 × SK6812‑MINI addressable RGB LEDs  
 - Decoupling capacitors and 330–470 Ω data resistor (recommended)  
-- Custom PCB (KiCad files in `hardware/`)  
-- 3D‑printed case (Fusion 360 / STEP files in `case/`)  
+- Custom PCB (KiCad files in `Hardware/`)
+  ![Schematics](Hardware/Schematics.png)
+- 3D‑printed case (Fusion 360 / STEP files in `Case/`)
+  ![Macropad top view](Case/CaseRender.png)
 
 See `BOM.xlsv` for the full bill of materials.
 
@@ -33,7 +35,7 @@ See `BOM.xlsv` for the full bill of materials.
 
 The firmware is written with KMK:
 
-- Source in the `firmware/` folder (main file: `firmware.main.py`)
+- Source in the `Firmware/` folder (main file: `firmware.main.py`)
 - Keys are wired to XIAO pins D0–D3 and mapped to `W`, `A`, `S`, `D`
 - Plug the board in, copy `firmware.main.py` to the CIRCUITPY drive, and it will enumerate as a USB keyboard
 
@@ -46,7 +48,7 @@ The firmware is written with KMK:
 2. **Flash CircuitPython & KMK**  
    - Install CircuitPython on the XIAO and copy the KMK library folder.  
 3. **Copy firmware**  
-   - Copy `firmware/firmware.main.py` to the CIRCUITPY drive.  
+   - Copy `Firmware/firmware.main.py` to the CIRCUITPY drive.  
 4. **Print and assemble case**  
    - 3D print the case parts and assemble with M3 screws and heat‑set inserts.
 
