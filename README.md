@@ -27,7 +27,7 @@ The board uses MX‑style switches, SK6812‑MINI addressable RGB LEDs, and a 3D
 - 3D‑printed case (Fusion 360 / STEP files in `Case/`)
   ![Macropad top view](Case/CaseRender.png)
 
-See `BOM.xlsv` for the full bill of materials.
+See `BOM.csv` for the full bill of materials.
 
 ---
 
